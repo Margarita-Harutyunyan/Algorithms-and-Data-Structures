@@ -35,13 +35,13 @@ def deserialize(filepath):
             if not min:
                 min = node
             else:
-                if min.getKey() > node.getKey():
+                if min > node:
                     min = node
             
             if not max:
                 max = node
             else:
-                if max.getKey() < node.getKey():
+                if max < node:
                     max = node
 
             nodeList.append(node)
